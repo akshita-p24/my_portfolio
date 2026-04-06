@@ -1,0 +1,24 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;   /* add this */
+  margin: 0 10px; 
+}
+
+.footer{
+  background: black;
+  color: white;
+  text-align:center;
+  padding: 10px;
+}
