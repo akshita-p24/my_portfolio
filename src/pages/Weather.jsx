@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function Weather() {
   const [city, setCity] = useState("");
-  const [weather, setWeather] = useState("");
+  const [weather, setWeather] = useState(null);
   const apiKey="0e9cb5a5499f5899c5df8907745a3dfb";
 
   const getWeather = async () => {
@@ -12,9 +12,9 @@ function Weather() {
       const data = await res.json();
 
       if (data.cod === 200) {
-        setWeather(data.weather[0].main);
+        setWeather(data);
       } else {
-        setWeather("City not found");
+        setWeather(null);
       }
   };
 
@@ -28,10 +28,10 @@ function Weather() {
       <button onClick={getWeather}>Search</button>
       {weather && weather.main && (
         <div className="card">
-            <h2>{weather.name}</h2>
-            <p>Temperature: {weather.main.temp}degree C</p>
-            <p>Weather: {weather.weather[0].main}</p>
-            <p>Humidity: {weather.main.humidity}%</p>
+          <h2>{weather.name}</h2>
+          <p>Temperature: {weather.main.temp}°C</p>
+          <p>Weather: {weather.weather[0].main}</p>
+          <p>Humidity: {weather.main.humidity}%</p>
         </div>
       )}
     </div>
