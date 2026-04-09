@@ -3,11 +3,11 @@ import { useState } from "react";
 function Weather() {
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState("");
+  const apiKey="0e9cb5a5499f5899c5df8907745a3dfb";
 
   const getWeather = async () => {
-    try {
       const res = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0e9cb5a5499f5899c5df8907745a3dfb`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
       );
       const data = await res.json();
 
@@ -16,21 +16,24 @@ function Weather() {
       } else {
         setWeather("City not found");
       }
-    } catch (error) {
-      console.error(error); // Log the error
-      setWeather("Error fetching data");
-    }
   };
 
   return (
-    <div>
+    <div className="weather">
       <h1>Weather</h1>
-      <input
+      <input type="text"
         placeholder="Enter city"
         onChange={(e) => setCity(e.target.value)}
       />
       <button onClick={getWeather}>Search</button>
-      <p>{weather}</p>
+      {weather && weather.main && (
+        <div className="card">
+            <h2>{weather.name}</h2>
+            <p>Temperature: {weather.main.temp}degree C</p>
+            <p>Weather: {weather.weather[0].main}</p>
+            <p>Humidity: {weather.main.humidity}%</p>
+        </div>
+      )}
     </div>
   );
 }
