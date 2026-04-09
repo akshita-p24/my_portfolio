@@ -8,12 +8,9 @@ body{
   background-color: lightpink;
 }
 
-section {
-  padding: 40px 15px;
-}
-
 .navbar{
   background:#552619 ;
+  border-radius:12px;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -22,24 +19,15 @@ section {
   flex-wrap: wrap;
 }
 
-.navbar-links{
-  display: flex;
-  gap: 15px;
-}
-
 .navbar a {
   text-decoration: none;
   color: white;   
   margin:  10px; 
-  padding: 5px 10px;
-  border-radius: 8px;
-  transition: 0.3s;
 }
 
 .navbar a:hover {
   text-decoration: underline;
   color:#00f2fe;
-  background: rgba(255, 255, 255, 0.2);
 }
 
 .home{
@@ -261,19 +249,4 @@ section {
   color: white;
   text-align:center;
   padding: 10px;
-}
-
-@media (max-width: 768px) {
-
-  .navbar-links {
-    display: flex;
-    overflow-x: auto;
-    gap: 15px;
-    width: 100%;
-  }
-
-  .navbar-links a {
-    white-space: nowrap;
-  }
-
 }
