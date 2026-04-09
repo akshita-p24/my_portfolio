@@ -1,23 +1,244 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
+  background-color: lightpink;
 }
 
+.home{
+  text-align: center;
+  background:  #FBEAE7;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+}
+
+.home-button {
+  background-color: #b2456e; 
+  color: #fff;                 
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #f08080;  
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;    
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.contact-heading {
+  color: #b2456e;
+  margin-bottom: 2rem;     
+  text-align: center;
+}
+
+.contact-card {
+  background-color: #fff;                    
+  padding: 2rem 2.5rem;                       
+  border-radius: 12px;                        
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);    
+  text-align: center;                          
+  max-width: 400px;
+  width: 90%;
+}
+
+.contact-card p {
+  margin: 0.5rem 0;
+  color: #552619;
+  font-size: 1rem;
+}
+
+.contact-card a {
+  color: #b2456e;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-card a:hover {
+  color: #f08080;
+  text-decoration: underline;
+}
 .navbar{
-  background: black;
+  background:#552619 ;
+  border-radius:12px;
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 15px 20px;
+  align-items: center;
 }
 
 .navbar a {
   text-decoration: none;
-  color: white;   /* add this */
-  margin: 0 10px; 
+  color: white;   
+  margin:  10px; 
 }
 
+.navbar a:hover {
+  text-decoration: underline;
+  color:#00f2fe;
+}
+
+.education-wrapper {
+  display: flex;
+  justify-content: center;  
+  margin: 2rem 0;
+}
+
+.education h2 {
+  color: #b2456e;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.timeline-item {
+  margin-bottom: 1rem;
+}
+
+.timeline-content {
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 0.8rem;
+  text-align: center;  
+}
+
+.timeline-content h3 {
+  color: #552619;
+  margin-bottom: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #5e2d3c;
+  font-size: 1rem;
+}
+
+.skills-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  font-family: Arial, sans-serif;
+}
+
+.skills-card {
+  display: inline-block;              
+  background-color: #FBEAE7;
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 300px;                  
+  width: 90%;
+}
+
+.skills-card h1 {
+  color: #b2456e;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills-card h2 {
+  color: #552619;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+.skills-list {
+  list-style: none;       
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.skills-list li {
+  background-color: #b2456e;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;  
+}
+
+.skills-card p {
+  margin: 0.3rem 0;
+  color: #5e2d3c;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;   
+  align-items: center;     
+  margin-top: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.weather h1 {
+  color: #b2456e;
+  margin-bottom: 1.5rem;
+}
+
+.weather-input {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  border: none;               
+  background-color: #f5f5f5; 
+  font-size: 1rem;
+  width: 250px;
+  margin-bottom: 1rem;
+  outline: none;              
+  text-align: left;           
+}
+
+
+.weather-button {
+  padding: 0.6rem 1.5rem;
+  border-radius: 12px;       
+  border: none;               
+  background-color: #b2456e;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 2rem;        
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.weather-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.card {
+  text-align: center;          
+  margin-bottom: 2rem;         
+}
+
+.card h2 {
+  color: #b2456e;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #5e2d3c;
+  margin: 0.3rem 0;
+}
 .footer{
-  background: black;
+  background: #552619;
   color: white;
   text-align:center;
   padding: 10px;

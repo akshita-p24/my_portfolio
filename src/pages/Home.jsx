@@ -3,16 +3,16 @@ import { useState } from "react";
 function Home() {
     const [count,setCount]= useState(0);
     return (
-        <div>
-            <h1>Welcome</h1>
-            <p>This is my portfolio website</p>
-            <p> Hi! I’m Akshita, a passionate web developer with interest in building
+        <section className="home">
+            <h1>Welcome. Hi, I am Akshita</h1>
+            <p className="subtitle">Frontend developer | React Enthusiast</p>
+            <p> I’m a passionate web developer with interest in building
                 interactive and responsive applications. I enjoy learning new
                 technologies and improving my coding skills every day.
             </p>
-            <button onClick={()=>
+            <button className="home-button" onClick={() =>
                 setCount(count+1)}> Clicked {count} times </button>
-        </div>
+        </section>
     );
 }
 export default Home;
