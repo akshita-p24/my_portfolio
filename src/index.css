@@ -10,7 +10,6 @@ body{
 
 .navbar{
   background:#552619 ;
-  border-radius:12px;
   color: white;
   display: flex;
   justify-content: space-between;
