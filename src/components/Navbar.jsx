@@ -4,7 +4,7 @@ function Navbar() {
     return (
         <nav className="navbar">
             <h2>My Portfolio</h2>
-            <div>
+            <div className-="navbar-links">
                 <Link to="/">Home</Link>{""}
                 <Link to="/contact">Contact</Link>{""}
                 <Link to="/education">Education</Link>{""}
