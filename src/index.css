@@ -276,26 +276,4 @@ section {
     white-space: nowrap;
   }
 
-  .home {
-    padding: 15px;
-    margin: 1rem;
-  }
-
-  .contact-card {
-    padding: 1.5rem;
-    width: 95%;
-  }
-
-  .skills-card {
-    padding: 1.5rem;
-    width: 95%;
-  }
-
-  .weather-input {
-    width: 100%;
-  }
-
-  .weather-button {
-    width: 100%;
-  }
 }
