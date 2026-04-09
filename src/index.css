@@ -10,6 +10,7 @@ body{
 
 .navbar{
   background:#552619 ;
+  border-radius:12px;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -249,4 +250,3 @@ body{
   text-align:center;
   padding: 10px;
 }
-
