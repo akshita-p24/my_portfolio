@@ -12,14 +12,20 @@ import Weather from "./pages/Weather";
 function App(){
   return (
     <BrowserRouter>
-      <Navbar></Navbar>
+      <nav>
+        <Link to="/">Home</Link> |{" "}
+        <Link to="/contact">Contact</Link> |{" "}
+        <Link to="/education">Education</Link> |{" "}
+        <Link to="/skills">Skills</Link> |{" "}
+        <Link to="/weather">Weather</Link>
+      </nav>
 
       <Routes>
-        <Route path= "/" element={<Home />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
-        <Route path="/education" element={<Education />}></Route>
-        <Route path="/skills" element={<Skills />}></Route>
-        <Route path="/weather" element={<Weather />}></Route>
+        <Route path= "/" element={<Home />} />
+        <Route path="/contact" element={<Contact />}/>
+        <Route path="/education" element={<Education />}/>
+        <Route path="/skills" element={<Skills />}/>
+        <Route path="/weather" element={<Weather />}/>
       </Routes>
 
       <Footer></Footer>
